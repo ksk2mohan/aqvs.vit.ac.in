@@ -1,0 +1,13 @@
+https://www.ibm.com/training/certification/ibm-certified-quantum-computation-using-qiskit-v2x-developer-associate-C9008400
+
+https://quantum.cloud.ibm.com/
+
+https://quantum.cloud.ibm.com/learning/en
+
+https://www.ibm.com/quantum/products
+
+https://quantum.cloud.ibm.com/composer
+
+https://quantum.microsoft.com/
+
+https://javafxpert.github.io/grok-bloch/
