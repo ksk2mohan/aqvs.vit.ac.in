@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AQVS | Video Gallery</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+:root{--green:#5fcf80;--green2:#4ac16c;}
+body{font-family:Arial,sans-serif;background:#f7fff8;}
+.page-title{background:linear-gradient(180deg,var(--green),var(--green2));color:#fff;padding:70px 0 25px}
+.breadcrumbs{background:#56c877;padding:12px 0}
+.breadcrumbs a{color:#fff;text-decoration:none}
+.section-title h2{color:var(--green);font-weight:700}
+.video-card{background:#fff;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,.08);overflow:hidden;height:100%}
+.thumb{position:relative}
+.thumb img{width:100%;height:240px;object-fit:cover}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:56px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.5)}
+.badge-aqvs{background:var(--green)}
+.note{background:#eefcf2;border-left:5px solid var(--green);padding:15px;border-radius:6px}
+footer{margin-top:60px;background:#214b34;color:#fff;padding:20px}
+</style>
+</head>
+<body>
+
+<div class="page-title">
+<div class="container text-center">
+<h1>Video Gallery</h1>
+<p class="mb-0">AQVS – Advancing Quantum Vision Systems</p>
+<p>British Council Going Global Partnerships – Industry–Academia TNE Project</p>
+</div>
+</div>
+
+<div class="breadcrumbs">
+<div class="container">
+<ol class="breadcrumb mb-0">
+<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+<li class="breadcrumb-item"><a href="gallery.html">Gallery</a></li>
+<li class="breadcrumb-item active text-white">Video Gallery</li>
+</ol>
+</div>
+</div>
+
+<section class="container py-5">
+<div class="section-title mb-4">
+<h2>Project Videos</h2>
+<p>Showcase AQVS project activities, workshops, international collaborations, and technical demonstrations.</p>
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4 col-md-6">
+<div class="video-card">
+<div class="thumb">
+<img src="assets/img/video/video1.jpg" alt="Technical Training">
+<i class="bi bi-play-circle-fill play"></i>
+</div>
+<div class="p-3">
+<h5>Technical Training Programme</h5>
+<span class="badge badge-aqvs">Training</span>
+<p class="mt-2">Hands-on sessions on Quantum Computing, Artificial Intelligence, Computer Vision and Smart Energy.</p>
+<a class="btn btn-success btn-sm" href="#">Watch Video</a>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6">
+<div class="video-card">
+<div class="thumb">
+<img src="assets/img/video/video2.jpg" alt="Expert Lecture">
+<i class="bi bi-play-circle-fill play"></i>
+</div>
+<div class="p-3">
+<h5>International Expert Lecture</h5>
+<span class="badge badge-aqvs">Lecture</span>
+<p class="mt-2">Guest lectures delivered by experts from VIT, Northumbria University and CEIR Mobility.</p>
+<a class="btn btn-success btn-sm" href="#">Watch Video</a>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6">
+<div class="video-card">
+<div class="thumb">
+<img src="assets/img/video/video3.jpg" alt="Project Visit">
+<i class="bi bi-play-circle-fill play"></i>
+</div>
+<div class="p-3">
+<h5>Northumbria University Visit</h5>
+<span class="badge badge-aqvs">International Visit</span>
+<p class="mt-2">Highlights from the Indo–UK collaboration and laboratory visits in Newcastle, UK.</p>
+<a class="btn btn-success btn-sm" href="northumbria-visit.html">View Visit</a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="note mt-5">
+<strong>How to add your videos:</strong>
+<ul class="mb-0">
+<li>Upload MP4 files to <code>assets/video/</code> and link them.</li>
+<li>Or replace the "Watch Video" buttons with YouTube embed links.</li>
+<li>Replace thumbnail images in <code>assets/img/video/</code>.</li>
+</ul>
+</div>
+</section>
+
+<footer class="text-center">
+AQVS – Advancing Quantum Vision Systems | British Council Going Global Partnerships – Industry–Academia TNE Project
+</footer>
+
+</body>
+</html>

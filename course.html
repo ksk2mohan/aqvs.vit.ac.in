@@ -1,0 +1,2136 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+      VAC2603 | Quantum-Inspired Computational Methods for AI and Computer
+      Vision
+    </title>
+    <meta
+      content="Official programme page for VAC2603 – Quantum-Inspired Computational Methods for AI and Computer Vision, including schedule, speakers, learning resources, videos and participant information."
+      name="description"
+    />
+    <meta
+      content="VAC2603, Quantum Computing, Quantum Machine Learning, Computer Vision, VIT, Value Added Programme"
+      name="keywords"
+    />
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;family=Poppins:wght@400;500;600;700&amp;family=Raleway:wght@600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+      :root {
+        --vac-blue: #198754;
+        --vac-deep: #0f5f3a;
+        --vac-cyan: #72c996;
+        --vac-green: #5fcf80;
+        --vac-soft: #f1f9f4;
+        --vac-ink: #243447;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 165px;
+      }
+      .vac-page {
+        color: var(--vac-ink);
+      }
+      .vac-hero {
+        position: relative;
+        padding: 72px 0;
+        background:
+          linear-gradient(
+            120deg,
+            rgba(8, 79, 47, 0.96),
+            rgba(25, 135, 84, 0.91)
+          ),
+          url("assets/img/events/VAC2603-banner1.png") center/cover;
+        color: #fff;
+        overflow: hidden;
+      }
+      .vac-hero:after {
+        content: "";
+        position: absolute;
+        right: -80px;
+        bottom: -120px;
+        width: 380px;
+        height: 380px;
+        border: 70px solid rgba(255, 255, 255, 0.07);
+        border-radius: 50%;
+      }
+      .vac-hero .container {
+        position: relative;
+        z-index: 2;
+      }
+      .vac-kicker {
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        padding: 7px 14px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.11);
+        font-weight: 600;
+      }
+      .vac-hero h1 {
+        font-family: Raleway, sans-serif;
+        font-size: clamp(2rem, 4.3vw, 4rem);
+        font-weight: 800;
+        line-height: 1.08;
+        margin: 18px 0;
+      }
+      .vac-hero p {
+        font-size: 1.08rem;
+        max-width: 800px;
+        color: #eef7ff;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 26px;
+      }
+      .vac-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: 0.25s;
+      }
+      .vac-btn-primary {
+        background: #fff;
+        color: var(--vac-blue);
+      }
+      .vac-btn-primary:hover {
+        background: #edf8f1;
+        color: var(--vac-deep);
+      }
+      .vac-btn-outline {
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        color: #fff;
+      }
+      .vac-btn-outline:hover {
+        background: #fff;
+        color: var(--vac-blue);
+      }
+      .info-strip {
+        margin-top: -30px;
+        position: relative;
+        z-index: 3;
+      }
+      .info-card {
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 12px 35px rgba(20, 55, 90, 0.14);
+        padding: 22px;
+        height: 100%;
+        border-top: 4px solid var(--vac-green);
+      }
+      .info-card i {
+        font-size: 1.7rem;
+        color: var(--vac-blue);
+      }
+      .info-card strong {
+        display: block;
+        margin-top: 8px;
+        color: #153d2a;
+      }
+      .info-card span {
+        font-size: 0.92rem;
+        color: #66766d;
+      }
+      .vac-section {
+        padding: 70px 0;
+        scroll-margin-top: 165px;
+      }
+      .vac-section.alt {
+        background: var(--vac-soft);
+      }
+      .section-heading {
+        margin-bottom: 34px;
+      }
+      .section-heading .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--vac-blue);
+        font-size: 0.78rem;
+        font-weight: 800;
+      }
+      .section-heading h2 {
+        font-family: Raleway, sans-serif;
+        font-weight: 800;
+        color: #153d2a;
+        margin-top: 6px;
+      }
+      .section-heading p {
+        color: #66766d;
+        max-width: 760px;
+      }
+      .content-card {
+        background: #fff;
+        border: 1px solid #dfece4;
+        border-radius: 14px;
+        padding: 26px;
+        height: 100%;
+        box-shadow: 0 6px 22px rgba(35, 63, 88, 0.06);
+      }
+      .content-card h3 {
+        font-size: 1.12rem;
+        color: #153d2a;
+        font-weight: 700;
+      }
+      .check-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .check-list li {
+        position: relative;
+        padding: 7px 0 7px 28px;
+      }
+      .check-list li:before {
+        content: "\F26A";
+        font-family: "bootstrap-icons";
+        position: absolute;
+        left: 0;
+        color: var(--vac-green);
+        font-weight: 700;
+      }
+      .quick-nav {
+        position: sticky;
+        top: 92px;
+        z-index: 9;
+        background: #fff;
+        border-bottom: 1px solid #dfece4;
+        box-shadow: 0 4px 16px rgba(26, 53, 79, 0.06);
+      }
+      .quick-nav .nav {
+        flex-wrap: nowrap;
+        overflow: auto;
+      }
+      .quick-nav a {
+        white-space: nowrap;
+        padding: 15px 14px;
+        color: #3f5749;
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+      .quick-nav a:hover {
+        color: var(--vac-blue);
+      }
+      .schedule-nav {
+        gap: 8px;
+        margin-bottom: 22px;
+      }
+      .schedule-nav .nav-link {
+        border: 1px solid #d6e9dc;
+        border-radius: 10px;
+        color: #365746;
+        font-weight: 700;
+        background: #fff;
+      }
+      .schedule-nav .nav-link.active {
+        background: var(--vac-blue);
+        border-color: var(--vac-blue);
+        color: #fff;
+      }
+      .schedule-table {
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid #dbeadf;
+      }
+      .schedule-table thead th {
+        background: #198754;
+        color: #fff;
+        border: 0;
+        padding: 14px;
+      }
+      .schedule-table td {
+        padding: 13px;
+        vertical-align: top;
+      }
+      .schedule-table tr.quiz td {
+        background: #f0faf3;
+        color: #267145;
+      }
+      .schedule-table tr.break td {
+        background: #fff8e8;
+        color: #835f08;
+      }
+      .schedule-table .time {
+        white-space: nowrap;
+        font-weight: 700;
+        color: #315842;
+      }
+      .speaker-name {
+        font-weight: 700;
+        color: #145c37;
+      }
+      .speaker-card {
+        background: #fff;
+        border-radius: 14px;
+        border: 1px solid #dbeadf;
+        padding: 22px;
+        height: 100%;
+        transition: 0.25s;
+      }
+      .speaker-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(27, 65, 101, 0.12);
+      }
+      .speaker-avatar {
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, var(--vac-blue), var(--vac-cyan));
+        color: #fff;
+        font-size: 1.35rem;
+        font-weight: 800;
+        margin-bottom: 14px;
+      }
+      .speaker-card h3 {
+        font-size: 1.05rem;
+        margin: 0 0 5px;
+      }
+      .speaker-card .topic {
+        font-size: 0.9rem;
+        color: #667b8f;
+      }
+      .bio-placeholder {
+        font-size: 0.82rem;
+        color: #8a9aaa;
+        border-top: 1px dashed #d6e1ea;
+        margin-top: 14px;
+        padding-top: 12px;
+      }
+      .resource-card {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        border-radius: 14px;
+        border: 1px solid #dbeadf;
+        padding: 22px;
+        height: 100%;
+      }
+      .resource-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        display: grid;
+        place-items: center;
+        background: #edf8f1;
+        color: var(--vac-blue);
+        font-size: 1.4rem;
+      }
+      .resource-card h3 {
+        font-size: 1.05rem;
+        margin: 15px 0 7px;
+      }
+      .resource-card p {
+        color: #68786f;
+        font-size: 0.9rem;
+        flex-grow: 1;
+      }
+      .resource-card .resource-link {
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--vac-blue);
+      }
+      .status-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 0.73rem;
+        font-weight: 700;
+        padding: 5px 9px;
+        border-radius: 999px;
+        background: #fff5d8;
+        color: #826008;
+        width: max-content;
+      }
+      .status-badge.available {
+        background: #eaf8ee;
+        color: #21713a;
+      }
+      .participant-tools {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 18px;
+      }
+      .participant-search {
+        max-width: 380px;
+      }
+      .participant-table th {
+        background: #145c37;
+        color: #fff;
+      }
+      .participant-table td,
+      .participant-table th {
+        vertical-align: middle;
+      }
+      .empty-state {
+        text-align: center;
+        padding: 35px;
+        color: #75879a;
+        background: #f8fbfe;
+        border: 1px dashed #cbd9e5;
+        border-radius: 12px;
+      }
+      .contact-panel {
+        background: linear-gradient(120deg, #083e7b, #0b5ca6);
+        border-radius: 18px;
+        color: #fff;
+        padding: 34px;
+      }
+      .contact-panel a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .contact-panel .contact-item {
+        display: flex;
+        gap: 12px;
+        margin-top: 14px;
+      }
+      .contact-panel i {
+        font-size: 1.25rem;
+        color: #7de1f2;
+      }
+      .update-note {
+        background: #fff8df;
+        border-left: 4px solid #e9b949;
+        padding: 14px 16px;
+        border-radius: 8px;
+        color: #6f5a13;
+      }
+      .footer-links-inline a {
+        color: #dcecff;
+        margin-right: 14px;
+        text-decoration: none;
+      }
+      .footer-links-inline a:hover {
+        color: #fff;
+      }
+      @media (max-width: 767px) {
+        html {
+          scroll-padding-top: 145px;
+        }
+        .vac-section {
+          scroll-margin-top: 145px;
+        }
+        .vac-hero {
+          padding: 52px 0;
+        }
+        .info-strip {
+          margin-top: 0;
+          padding-top: 20px;
+        }
+        .schedule-table {
+          font-size: 0.85rem;
+        }
+        .schedule-table .time {
+          white-space: normal;
+        }
+        .vac-section {
+          padding: 52px 0;
+        }
+      }
+    </style>
+  </head>
+  <body class="vac-page">
+    <header class="header d-flex align-items-center sticky-top" id="header">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center"
+      >
+        <a class="logo d-flex align-items-center me-3" href="index.html"
+          ><img
+            alt="VIT Logo"
+            src="assets/img/1702280307VIT - Vellore Logo.jpg"
+            style="max-height: 65px; width: auto"
+        /></a>
+        <a class="logo d-flex align-items-center me-auto" href="index.html"
+          ><img
+            alt="Northumbria University Logo"
+            src="assets/img/northumbria_university_newcastle_logo.png"
+            style="max-height: 62px; width: auto"
+        /></a>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a href="index.html" class="active">Home<br /></a>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="research-theme.html">Research Theme</a></li>
+            <li><a href="news-events.html">News & Events</a></li>
+            <li class="dropdown">
+              <a href="#">
+                <span>Gallery</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i>
+              </a>
+
+              <ul>
+                <li>
+                  <a href="gallery.html">
+                    <i class="bi bi-images"></i> Photo Gallery
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <i class="bi bi-camera-video"></i> Video Gallery
+                  </a>
+                </li>
+
+                <!-- Project Visits -->
+                <li class="dropdown">
+                  <a href="#">
+                    <span> <i class="bi bi-airplane"></i> Project Visits </span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i>
+                  </a>
+
+                  <ul>
+                    <li>
+                      <a href="northumbria-visit.html">
+                        Northumbria University (UK) - 2026
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="future-visits.html"> Future Visits </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <i class="bi bi-mortarboard"></i> Training Programmes
+                  </a>
+                </li>
+
+                <li>
+                  <a href="workshops.html">
+                    <i class="bi bi-people"></i> Workshops
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#"> <i class="bi bi-mic"></i> Expert Lectures </a>
+                </li>
+
+                <li>
+                  <a href="downloads.html">
+                    <i class="bi bi-download"></i> Downloads
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <a class="btn-getstarted d-none d-sm-inline-flex" href="#resources"
+          >Course Resources</a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="vac-hero">
+        <div class="container">
+          <span class="vac-kicker"
+            ><i class="bi bi-mortarboard"></i> British Council–Sponsored Value
+            Added Programme</span
+          >
+          <h1>
+            <font color="white"
+              >VAC2603 – Quantum-Inspired Computational Methods for AI and
+              Computer Vision</font
+            >
+          </h1>
+          <p>
+            Five-day online programme jointly organized by the School of
+            Electrical Engineering and the School of Computer Science and
+            Engineering, Vellore Institute of Technology.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="vac-btn vac-btn-primary"
+              href="assets/VAC2603-brochure.pdf"
+              target="_blank"
+              ><i class="bi bi-file-earmark-pdf"></i> View Brochure</a
+            >
+            <a class="vac-btn vac-btn-outline" href="#schedule"
+              ><i class="bi bi-calendar3"></i> View Schedule</a
+            >
+            <a
+              class="vac-btn vac-btn-outline"
+              href="https://meet.google.com/arj-aime-bbs"
+              rel="noopener"
+              target="_blank"
+              ><i class="bi bi-camera-video"></i> Join Online Session</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="info-strip">
+        <div class="container">
+          <div class="row g-3">
+            <div class="col-6 col-lg">
+              <div class="info-card">
+                <i class="bi bi-calendar-event"></i
+                ><strong>18 July–1 August 2026</strong
+                ><span>18, 19, 25, 26 July and 1 August</span>
+              </div>
+            </div>
+            <div class="col-6 col-lg">
+              <div class="info-card">
+                <i class="bi bi-clock"></i><strong>9:30 AM–5:10 PM</strong
+                ><span>Four technical sessions each day</span>
+              </div>
+            </div>
+            <div class="col-6 col-lg">
+              <div class="info-card">
+                <i class="bi bi-broadcast"></i><strong>Online Mode</strong
+                ><span>Google Meet live sessions</span>
+              </div>
+            </div>
+            <div class="col-6 col-lg">
+              <div class="info-card">
+                <i class="bi bi-cash-coin"></i
+                ><strong>No Registration Fee</strong
+                ><span>Certificate for eligible participants</span>
+              </div>
+            </div>
+            <div class="col-12 col-lg">
+              <div class="info-card">
+                <i class="bi bi-people"></i
+                ><strong>UG, PG &amp; Research Scholars</strong
+                ><span>Faculty members may also participate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <nav class="quick-nav">
+        <div class="container">
+          <div class="nav">
+            <a href="#overview">Overview</a><a href="#schedule">Schedule</a
+            ><a href="#speakers">Resource Persons</a
+            ><a href="#resources">PPTs &amp; Resources</a
+            ><a href="#videos">Videos</a><a href="#participants">Participants</a
+            ><a href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <section class="vac-section" id="overview">
+        <div class="container">
+          <div class="section-heading">
+            <div class="eyebrow">About the Programme</div>
+            <h2>Quantum-inspired learning for next-generation AI systems</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-7">
+              <div class="content-card">
+                <p>
+                  The programme introduces participants to quantum-inspired
+                  computing, quantum machine learning, quantum algorithms and
+                  their practical relevance to artificial intelligence, computer
+                  vision, image analysis and smart energy infrastructure. It
+                  combines conceptual foundations, mathematical insights,
+                  demonstrations, research applications and expert-led
+                  discussions.
+                </p>
+                <p class="mb-0">
+                  Participants gain exposure to QML models, hybrid
+                  quantum–classical approaches, quantum communication, quantum
+                  vision, quantum cryptography, post-quantum cryptography and
+                  emerging applications in energy infrastructure.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="content-card">
+                <h3>Programme Highlights</h3>
+                <ul class="check-list">
+                  <li>20 expert-led technical sessions across five days</li>
+                  <li>Session-wise quizzes and prizes for quiz winners</li>
+                  <li>Hands-on demonstrations and application discussions</li>
+                  <li>
+                    Certificate based on attendance and programme requirements
+                  </li>
+                  <li>
+                    Learning resources, slides, recordings and useful URLs in
+                    one place
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="vac-section alt" id="schedule">
+        <div class="container">
+          <div class="section-heading">
+            <div class="eyebrow">Technical Programme</div>
+            <h2>Five-Day Session Schedule</h2>
+            <p>
+              Select a programme day to view speakers, timings and session
+              topics.
+            </p>
+          </div>
+          <ul class="nav schedule-nav" id="scheduleTabs" role="tablist">
+            <li class="nav-item">
+              <button
+                class="nav-link active"
+                data-bs-target="#day1"
+                data-bs-toggle="tab"
+              >
+                Day 1 · 18 Jul
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                data-bs-target="#day2"
+                data-bs-toggle="tab"
+              >
+                Day 2 · 19 Jul
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                data-bs-target="#day3"
+                data-bs-toggle="tab"
+              >
+                Day 3 · 25 Jul
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                data-bs-target="#day4"
+                data-bs-toggle="tab"
+              >
+                Day 4 · 26 Jul
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                data-bs-target="#day5"
+                data-bs-toggle="tab"
+              >
+                Day 5 · 1 Aug
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="scheduleContent"></div>
+        </div>
+      </section>
+      <section class="vac-section" id="speakers">
+        <div class="container">
+          <div class="section-heading">
+            <div class="eyebrow">Experts</div>
+            <h2>Resource Persons</h2>
+            <p>
+              Resource persons and their session themes. Detailed profiles,
+              photographs and profile URLs can be added to the editable data
+              block near the end of this HTML file.
+            </p>
+          </div>
+          <div class="row g-4" id="speakerGrid"></div>
+        </div>
+      </section>
+      <section class="vac-section alt" id="resources">
+        <div class="container">
+          <div class="section-heading">
+            <div class="eyebrow">Learning Hub</div>
+            <h2>Presentation Slides, Code and Useful Resources</h2>
+            <p>
+              Use this section as the central repository for materials shared
+              during the programme.
+            </p>
+          </div>
+          <div class="update-note mb-4">
+            <i class="bi bi-info-circle me-2"></i>Links marked “To be uploaded”
+            are ready placeholders. Replace the corresponding URL in the
+            <strong>courseResources</strong> JavaScript array at the bottom of
+            this page.
+          </div>
+          <div class="row g-4" id="resourceGrid"></div>
+        </div>
+      </section>
+      <section class="vac-section" id="videos">
+        <div class="container">
+          <div class="section-heading">
+            <div class="eyebrow">Recordings</div>
+            <h2>Session Videos</h2>
+            <p>
+              Add YouTube, Google Drive or institutional repository links after
+              each recording is approved for publication.
+            </p>
+          </div>
+          <div class="row g-4" id="videoGrid"></div>
+        </div>
+      </section>
+      <section class="vac-section alt" id="participants">
+        <div class="container">
+          <div class="section-heading">
+            <div class="eyebrow">Programme Completion</div>
+            <h2>Final Participants List</h2>
+            <p>
+              The searchable table can display participant names, institutions
+              and certificate details once the final approved list is available.
+            </p>
+          </div>
+          <div class="content-card">
+            <div class="participant-tools">
+              <input
+                aria-label="Search participants"
+                class="form-control participant-search"
+                id="participantSearch"
+                placeholder="Search participant name, institution or ID…"
+                type="search"
+              />
+              <div>
+                <a
+                  aria-disabled="true"
+                  class="btn btn-outline-primary disabled disabled-link"
+                  href="javascript:void(0)"
+                  id="participantDownload"
+                  ><i class="bi bi-download me-1"></i> Download Final List</a
+                >
+              </div>
+            </div>
+            <div class="table-responsive d-none" id="participantTableWrap">
+              <table class="table table-hover participant-table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Participant Name</th>
+                    <th>Registration/ID</th>
+                    <th>Institution</th>
+                    <th>Certificate Status</th>
+                  </tr>
+                </thead>
+                <tbody id="participantBody"></tbody>
+              </table>
+            </div>
+            <div class="empty-state" id="participantEmpty">
+              <i class="bi bi-people fs-2 d-block mb-2"></i
+              ><strong
+                >Final approved participant list will be published here.</strong
+              >
+              <div class="small mt-1">
+                Add rows to the <code>participants</code> JavaScript array and
+                provide the downloadable PDF/Excel URL.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="vac-section" id="contact">
+        <div class="container">
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-7">
+              <div class="content-card">
+                <div class="section-heading mb-3">
+                  <div class="eyebrow">Organizing Team</div>
+                  <h2 class="h3">Programme Coordination</h2>
+                </div>
+                <div class="row g-3">
+                  <div class="col-md-4">
+                    <strong>Dr. Indragandhi V</strong>
+                    <div class="small text-secondary">Professor, SELECT</div>
+                  </div>
+                  <div class="col-md-4">
+                    <strong>Dr. G. N. Balaji</strong>
+                    <div class="small text-secondary">
+                      Associate Professor, SCOPE
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <strong>Dr. V. Subramaniyaswamy</strong>
+                    <div class="small text-secondary">Professor, SCOPE</div>
+                  </div>
+                </div>
+                <hr />
+                <p class="mb-0 small text-secondary">
+                  Organized by the School of Electrical Engineering jointly with
+                  the School of Computer Science and Engineering, Vellore
+                  Institute of Technology.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="contact-panel h-100">
+                <h2 class="h4 text-white">Programme Contact</h2>
+                <div class="contact-item">
+                  <i class="bi bi-person"></i>
+                  <div>
+                    <strong>Dr. Indragandhi V</strong><br /><span
+                      >Programme Coordinator</span
+                    >
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <div>
+                    <a href="mailto:indragandhi.v@vit.ac.in"
+                      >indragandhi.v@vit.ac.in</a
+                    >
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <div><a href="tel:+919750603539">+91 97506 03539</a></div>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-whatsapp"></i>
+                  <div>
+                    <a
+                      href="https://chat.whatsapp.com/F2dV7nCnxhACAKBzUJVF80"
+                      rel="noopener"
+                      target="_blank"
+                      >Official WhatsApp Group</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer dark-background">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-7">
+            <h4>VAC2603</h4>
+            <p>
+              Quantum-Inspired Computational Methods for AI and Computer Vision
+            </p>
+            <div class="footer-links-inline">
+              <a href="#schedule">Schedule</a><a href="#resources">Resources</a
+              ><a href="#participants">Participants</a
+              ><a href="news-events.html">News &amp; Events</a>
+            </div>
+          </div>
+          <div class="col-lg-5 text-lg-end">
+            <p class="mb-1">
+              Vellore Institute of Technology, Vellore, Tamil Nadu, India
+            </p>
+            <p class="small mb-0">
+              British Council–sponsored Value Added Programme
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright text-center mt-4">
+        <p>© 2026 Vellore Institute of Technology. All rights reserved.</p>
+      </div>
+    </footer>
+    <a
+      aria-disabled="true"
+      class="scroll-top d-flex align-items-center justify-content-center disabled-link"
+      href="javascript:void(0)"
+      id="scroll-top"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      /* ================================================================
+   EASY UPDATE AREA
+   Replace placeholder URLs with actual PPT, PDF, code, profile, video
+   and participant-list URLs. Add/remove objects without editing HTML.
+================================================================ */
+      const programmeDays = [
+        {
+          id: "day1",
+          date: "18 July 2026",
+          sessions: [
+            [
+              "9:30 AM – 10:50 AM",
+              "Mr. Shakthi Ganesh",
+              "QML – The Next Big Thing: Introduction to Quantum Machine Learning, motivation and need for QML, classical ML vs quantum ML, quantum advantage, industry trends and adoption",
+              "session",
+            ],
+            ["10:50 AM – 11:00 AM", "", "Quiz on Session 1", "quiz"],
+            ["11:00 AM – 11:10 AM", "Break", "Break", "break"],
+            [
+              "11:10 AM – 12:30 PM",
+              "Mr. Karthiganesh Durai",
+              "Mathematics for QML; QSVM demonstration with mathematics; QNN demonstration with mathematics",
+              "session",
+            ],
+            ["12:30 PM – 12:40 PM", "", "Quiz on Session 2", "quiz"],
+            ["12:40 PM – 2:00 PM", "Lunch", "Lunch", "break"],
+            [
+              "2:00 PM – 3:20 PM",
+              "Mr. Shakthi Ganesh",
+              "Key QML algorithms overview and hybrid quantum–classical models",
+              "session",
+            ],
+            ["3:20 PM – 3:30 PM", "", "Quiz on Session 3", "quiz"],
+            ["3:30 PM – 3:40 PM", "Break", "Break", "break"],
+            [
+              "3:40 PM – 5:00 PM",
+              "Mr. Karthiganesh Durai",
+              "Real-world use cases and applications, challenges and future scope",
+              "session",
+            ],
+            ["5:00 PM – 5:10 PM", "", "Quiz on Session 4", "quiz"],
+          ],
+        },
+        {
+          id: "day2",
+          date: "19 July 2026",
+          sessions: [
+            [
+              "9:30 AM – 10:50 AM",
+              "Mr. Shakthi Ganesh",
+              "Advanced QML models, benchmarking QML and classical models, and quantum-inspired machine learning",
+              "session",
+            ],
+            ["10:50 AM – 11:00 AM", "", "Quiz on Session 1", "quiz"],
+            ["11:00 AM – 11:10 AM", "Break", "Break", "break"],
+            [
+              "11:10 AM – 12:30 PM",
+              "Mr. Karthiganesh Durai",
+              "Quantum reservoir computing, QRC demonstration and QRC applications",
+              "session",
+            ],
+            ["12:30 PM – 12:40 PM", "", "Quiz on Session 2", "quiz"],
+            ["12:40 PM – 2:00 PM", "Lunch", "Lunch", "break"],
+            [
+              "2:00 PM – 3:20 PM",
+              "Mr. Shakthi Ganesh",
+              "Quantum transfer learning, QTL demonstration and applications",
+              "session",
+            ],
+            ["3:20 PM – 3:30 PM", "", "Quiz on Session 3", "quiz"],
+            ["3:30 PM – 3:40 PM", "Break", "Break", "break"],
+            [
+              "3:40 PM – 5:00 PM",
+              "Mr. Karthiganesh Durai",
+              "Industry adoption of QML, contemporary research, QPINN and QGRNN",
+              "session",
+            ],
+            ["5:00 PM – 5:10 PM", "", "Quiz on Session 4", "quiz"],
+          ],
+        },
+        {
+          id: "day3",
+          date: "25 July 2026",
+          sessions: [
+            [
+              "9:30 AM – 10:50 AM",
+              "Ms. Nikita Kumari",
+              "Quantum communication and information processing",
+              "session",
+            ],
+            ["10:50 AM – 11:00 AM", "", "Quiz on Session 1", "quiz"],
+            ["11:00 AM – 11:10 AM", "Break", "Break", "break"],
+            [
+              "11:10 AM – 12:30 PM",
+              "Ms. Nikita Kumari",
+              "Quantum machine learning and quantum jamming mitigation",
+              "session",
+            ],
+            ["12:30 PM – 12:40 PM", "", "Quiz on Session 2", "quiz"],
+            ["12:40 PM – 2:00 PM", "Lunch", "Lunch", "break"],
+            [
+              "2:00 PM – 3:20 PM",
+              "Dr. Jafar Ali Ibrahim S",
+              "Quantum Vision Intelligence – quantum computing and machine vision for next-generation AI systems",
+              "session",
+            ],
+            ["3:20 PM – 3:30 PM", "", "Quiz on Session 3", "quiz"],
+            ["3:30 PM – 3:40 PM", "Break", "Break", "break"],
+            [
+              "3:40 PM – 5:00 PM",
+              "Dr. G. Rajarajan",
+              "Foundations of quantum algorithms",
+              "session",
+            ],
+            ["5:00 PM – 5:10 PM", "", "Quiz on Session 4", "quiz"],
+          ],
+        },
+        {
+          id: "day4",
+          date: "26 July 2026",
+          sessions: [
+            [
+              "9:30 AM – 10:50 AM",
+              "Dr. Jayakumar Vaithiyashankar",
+              "Quantum algorithms: Deutsch–Jozsa and Grover algorithms",
+              "session",
+            ],
+            ["10:50 AM – 11:00 AM", "", "Quiz on Session 1", "quiz"],
+            ["11:00 AM – 11:10 AM", "Break", "Break", "break"],
+            [
+              "11:10 AM – 12:30 PM",
+              "Dr. Jayakumar Vaithiyashankar",
+              "Simon algorithm and Shor algorithm",
+              "session",
+            ],
+            ["12:30 PM – 12:40 PM", "", "Quiz on Session 2", "quiz"],
+            ["12:40 PM – 2:00 PM", "Lunch", "Lunch", "break"],
+            [
+              "2:00 PM – 3:20 PM",
+              "Dr. Jayakumar Vaithiyashankar",
+              "Quantum variational algorithms and Quantum Support Vector Machine (QSVM)",
+              "session",
+            ],
+            ["3:20 PM – 3:30 PM", "", "Quiz on Session 3", "quiz"],
+            ["3:30 PM – 3:40 PM", "Break", "Break", "break"],
+            [
+              "3:40 PM – 5:00 PM",
+              "Dr. Jayakumar Vaithiyashankar",
+              "Quantum image-processing algorithms and applications",
+              "session",
+            ],
+            ["5:00 PM – 5:10 PM", "", "Quiz on Session 4", "quiz"],
+          ],
+        },
+        {
+          id: "day5",
+          date: "1 August 2026",
+          sessions: [
+            [
+              "9:30 AM – 10:50 AM",
+              "Dr. G. Prakash",
+              "Quantum cryptography",
+              "session",
+            ],
+            ["10:50 AM – 11:00 AM", "", "Quiz on Session 1", "quiz"],
+            ["11:00 AM – 11:10 AM", "Break", "Break", "break"],
+            [
+              "11:10 AM – 12:30 PM",
+              "Dr. V. Subramaniyaswamy",
+              "Post-Quantum Cryptography (PQC)",
+              "session",
+            ],
+            ["12:30 PM – 12:40 PM", "", "Quiz on Session 2", "quiz"],
+            ["12:40 PM – 2:00 PM", "Lunch", "Lunch", "break"],
+            [
+              "2:00 PM – 3:20 PM",
+              "Dr. G. N. Balaji",
+              "Quantum Vision: From Theory to Real-World Applications",
+              "session",
+            ],
+            ["3:20 PM – 3:30 PM", "", "Quiz on Session 3", "quiz"],
+            ["3:30 PM – 3:40 PM", "Break", "Break", "break"],
+            [
+              "3:40 PM – 5:00 PM",
+              "Dr. V. Indragandhi",
+              "Quantum Computing Applications: EV Batteries and Future Energy Infrastructure",
+              "session",
+            ],
+            ["5:00 PM – 5:10 PM", "", "Quiz on Session 4", "quiz"],
+          ],
+        },
+      ];
+
+      const speakers = [
+        {
+          name: "Mr. Shakthi Ganesh",
+          topic:
+            "Quantum machine learning foundations, advanced QML and transfer learning",
+          profile: "#",
+        },
+        {
+          name: "Mr. Karthiganesh Durai",
+          topic:
+            "Mathematics for QML, QSVM, QNN, QRC and contemporary QML research",
+          profile: "#",
+        },
+        {
+          name: "Ms. Nikita Kumari",
+          topic:
+            "Quantum communication, information processing and jamming mitigation",
+          profile: "#",
+        },
+        {
+          name: "Dr. Jafar Ali Ibrahim S",
+          topic: "Quantum Vision Intelligence and next-generation AI systems",
+          profile: "#",
+        },
+        {
+          name: "Dr. G. Rajarajan",
+          topic: "Foundations of quantum algorithms",
+          profile: "#",
+        },
+        {
+          name: "Dr. Jayakumar Vaithiyashankar",
+          topic:
+            "Quantum algorithms, variational algorithms and quantum image processing",
+          profile: "#",
+        },
+        { name: "Dr. G. Prakash", topic: "Quantum cryptography", profile: "#" },
+        {
+          name: "Dr. V. Subramaniyaswamy",
+          topic: "Post-Quantum Cryptography",
+          profile: "#",
+        },
+        {
+          name: "Dr. G. N. Balaji",
+          topic: "Quantum Vision: theory to real-world applications",
+          profile: "#",
+        },
+        {
+          name: "Dr. V. Indragandhi",
+          topic:
+            "Quantum applications in EV batteries and future energy infrastructure",
+          profile: "#",
+        },
+      ];
+
+      const courseResources = [
+        {
+          icon: "bi-file-earmark-pdf",
+          title: "Programme Brochure",
+          description:
+            "Official programme brochure containing objectives, topics, organizing team and contact information.",
+          url: "assets/VAC2603-brochure_new.pdf",
+          available: true,
+        },
+        {
+          icon: "bi-journal-text",
+          title: "Programme Syllabus",
+          description:
+            "Detailed syllabus and learning plan for the value added programme.",
+          url: "assets/Training programme_syllabus.pdf",
+          available: true,
+        },
+        {
+          icon: "bi-file-earmark-slides",
+          title: "Day 1 Presentation Slides",
+          description:
+            "Slides on QML foundations, mathematics, QSVM, QNN and hybrid models.",
+          url: "assets/Day 1 & Day 2 PPT - Mr.Shakthiganesh & Mr.Karthiganesh.pdf",
+          available: true,
+        },
+        {
+          icon: "bi-file-earmark-slides",
+          title: "Day 2 Presentation Slides",
+          description:
+            "Slides on advanced QML, QRC, QTL and contemporary research.",
+          url: "assets/Day 1 & Day 2 PPT - Mr.Shakthiganesh & Mr.Karthiganesh.pdf",
+          available: true,
+        },
+        {
+          icon: "bi-file-earmark-slides",
+          title: "Day 3 Presentation Slides",
+          description:
+            "Slides on quantum communication, QML, quantum vision and algorithms.",
+          url: "assets/Day 3 - PPT.pdf",
+          available: true,
+        },
+        {
+          icon: "bi-file-earmark-slides",
+          title: "Day 4 Presentation Slides",
+          description:
+            "Slides on Deutsch–Jozsa, Grover, Simon, Shor, QSVM and quantum image processing.",
+          url: "assets/Quantum introduction qc PPT - Dr.Jayakumar.pdf",
+          available: true,
+        },
+        {
+          icon: "bi-file-earmark-slides",
+          title: "Day 5 Presentation Slides",
+          description:
+            "Slides on quantum cryptography, PQC, quantum vision and energy applications.",
+          url: "assets/Day 5 - PPT.pdf",
+          available: true,
+        },
+        {
+          icon: "bi-code-square",
+          title: "Hands-on Notebooks and Source Code",
+          description:
+            "Qiskit, PennyLane, Ocean SDK and quantum machine-learning notebooks.",
+          url: "assets/Hands-On.zip",
+          available: true,
+        },
+        {
+          icon: "bi-link-45deg",
+          title: "Useful URLs and Reading Materials",
+          description:
+            "Curated documentation, tutorials, datasets, research papers and software links.",
+          url: "assets/Links.txt",
+          available: true,
+        },
+        {
+          icon: "bi-patch-question",
+          title: "Quiz and Feedback Links",
+          description:
+            "Session quizzes and programme feedback forms, subject to access permissions.",
+          url: "#",
+          available: false,
+        },
+      ];
+
+      const videos = programmeDays.map((d, i) => ({
+        title: `Day ${i + 1} Session Recordings`,
+        description: `Approved recordings for ${d.date}.`,
+        url: "#",
+        available: false,
+      }));
+
+      // Add approved participants as: {name:'Name',id:'Registration ID',institution:'Institution',status:'Eligible'}
+      const participants = [
+        {
+          id: "VAC2603001",
+          name: "AKIl ADHITHYAN k",
+          status: "Eligible",
+          institution: "Vellore Institute of Technology ",
+        },
+        {
+          id: "VAC2603002",
+          name: "Adya Razdan",
+          status: "Eligible",
+          institution: "Vellore Institute Of Technology ",
+        },
+        {
+          id: "VAC2603003",
+          name: "Anvitha Reddy Dornala",
+          status: "Eligible",
+          institution:
+            "Stanley college of engineering and technology for womens ",
+        },
+        {
+          id: "VAC2603004",
+          name: "Bugide Nikhila",
+          status: "Eligible",
+          institution: "Madanapalle Institute of Technology and Science ",
+        },
+        {
+          id: "VAC2603005",
+          name: "Deepak KK",
+          status: "Eligible",
+          institution: "Saranathan College of Engineering",
+        },
+        {
+          id: "VAC2603006",
+          name: "Devi.k",
+          status: "Eligible",
+          institution: "SRM TRP ENGINEERING COLLEGE ",
+        },
+        {
+          id: "VAC2603007",
+          name: "Dhaya Lakshmi A",
+          status: "Eligible",
+          institution: "Vellore Institute of Technology (Vellore)",
+        },
+        {
+          id: "VAC2603008",
+          name: "Dr Rajathi C",
+          status: "Eligible",
+          institution: "St Joseph's Institute of Technology ",
+        },
+        {
+          id: "VAC2603009",
+          name: "Dr S SRIDEVI",
+          status: "Eligible",
+          institution: "Thiagarajar College of Engineering",
+        },
+        {
+          id: "VAC2603010",
+          name: "Dr Sathya Balaji",
+          status: "Eligible",
+          institution: "PSG institute of Technology and Applied Research ",
+        },
+        {
+          id: "VAC2603011",
+          name: "Dr. SHAHNAZEER C K",
+          status: "Eligible",
+          institution: "MITS Deemed to be University AP",
+        },
+        {
+          id: "VAC2603012",
+          name: "Dr.D.Menaga",
+          status: "Eligible",
+          institution: "St.Joseph's Institute of Technology ",
+        },
+        {
+          id: "VAC2603013",
+          name: "Eshwar P",
+          status: "Eligible",
+          institution: "Vellore institute of technology ",
+        },
+        {
+          id: "VAC2603014",
+          name: "Ezhil G R",
+          status: "Eligible",
+          institution: "Velammal College of Engineering and Technology ",
+        },
+        {
+          id: "VAC2603015",
+          name: "GOPIKA S",
+          status: "Eligible",
+          institution: "VIT, VELLORE",
+        },
+        {
+          id: "VAC2603016",
+          name: "MURUGESWARI K",
+          status: "Eligible",
+          institution: "Dhanalakshmi Srinivasan Engineering College (A)",
+        },
+        {
+          id: "VAC2603017",
+          name: "NARESH GARI TEJASWI",
+          status: "Eligible",
+          institution: "Madanapalle institute of technology and science",
+        },
+        {
+          id: "VAC2603018",
+          name: "NIHARIKA AGRAWAL",
+          status: "Eligible",
+          institution: "ALLIANCE UNIVERSITY",
+        },
+        {
+          id: "VAC2603019",
+          name: "Nighitha Varghese",
+          status: "Eligible",
+          institution:
+            "Madanapalle institute of technology and science (MITS) Deemed to be University ",
+        },
+        {
+          id: "VAC2603020",
+          name: "P Rishi",
+          status: "Eligible",
+          institution: "VIT Vellore",
+        },
+        {
+          id: "VAC2603021",
+          name: "P.Shanmugapriya",
+          status: "Eligible",
+          institution: "PSG Institute of Technology and Applied Research ",
+        },
+        {
+          id: "VAC2603022",
+          name: "S Leela",
+          status: "Eligible",
+          institution: "PSG INSTITUTE OF TECHNOLOGY AND APPLIED RESEARCH ",
+        },
+        {
+          id: "VAC2603023",
+          name: "SAMPAD KUMAR PRADHAN",
+          status: "Eligible",
+          institution: "NIIS INSTITUTE OF ENGINEERING AND TECHNOLOGY ",
+        },
+        {
+          id: "VAC2603024",
+          name: "SRIJAH S",
+          status: "Eligible",
+          institution: "THIAGARAJAR COLLEGE OF ENGINEERING",
+        },
+        {
+          id: "VAC2603025",
+          name: "Sangeerthana",
+          status: "Eligible",
+          institution: "AVS Engineering college, Salem ",
+        },
+        {
+          id: "VAC2603026",
+          name: "Santhi Nisha E",
+          status: "Eligible",
+          institution: "St Joseph's Institute of Technology ",
+        },
+        {
+          id: "VAC2603027",
+          name: "THANGARASAN T",
+          status: "Eligible",
+          institution: "MADANAPALLE INSTITUTE OF TECHNOLOGY & SCIENCE",
+        },
+        {
+          id: "VAC2603028",
+          name: "THARUN DUDEKULA",
+          status: "Eligible",
+          institution: "Madanapalle Institute of technology and science ",
+        },
+        {
+          id: "VAC2603029",
+          name: "THIMMAPURAM GANESH",
+          status: "Eligible",
+          institution: "Madanapalle Institute of Technology & Science",
+        },
+        {
+          id: "VAC2603030",
+          name: "Vani Chinnakkagari",
+          status: "Eligible",
+          institution: "Madanapalle Institute of Technology and science ",
+        },
+        {
+          id: "VAC2603031",
+          name: "Vinothini V",
+          status: "Eligible",
+          institution: "Dhanalakshmi Srinivasan Engineering College ",
+        },
+        {
+          id: "VAC2603032",
+          name: "Akash M",
+          status: "Eligible",
+          institution: "Vellore institute of technology ",
+        },
+        {
+          id: "VAC2603033",
+          name: "Arun pandian",
+          status: "Eligible",
+          institution: "Vellore institute of technology",
+        },
+        {
+          id: "VAC2603034",
+          name: "C. Divya Gowri",
+          status: "Eligible",
+          institution: "PSG Institute of Technology and Applied Research ",
+        },
+        {
+          id: "VAC2603035",
+          name: "CHAGAM REDDY LINGESWAR REDDY",
+          status: "Eligible",
+          institution: "Madanapalle Institute of Technology & Science ",
+        },
+        {
+          id: "VAC2603036",
+          name: "Dr R Nidhya",
+          status: "Eligible",
+          institution: "MITS Deemed to be University",
+        },
+        {
+          id: "VAC2603037",
+          name: "Dr.D.Senthil Raja",
+          status: "Eligible",
+          institution: "Sri Krishna College of Engineering and Technology ",
+        },
+        {
+          id: "VAC2603038",
+          name: "Dr.M.N.Kavitha",
+          status: "Eligible",
+          institution: "PSG Institute of Technology and Applied Research ",
+        },
+        {
+          id: "VAC2603039",
+          name: "Farhana Begam A H",
+          status: "Eligible",
+          institution: "Dhanalakshmi Srinivasan Engineering College ",
+        },
+        {
+          id: "VAC2603040",
+          name: "GUNDLURU LOKESH",
+          status: "Eligible",
+          institution: "Madanapalle Institute of Technology and Science",
+        },
+        {
+          id: "VAC2603041",
+          name: "J Jeyasoundari",
+          status: "Eligible",
+          institution: "Thiagarajar college of Engineering ",
+        },
+        {
+          id: "VAC2603042",
+          name: "JAIPREETHA S",
+          status: "Eligible",
+          institution: "THIAGARAJAR COLLEGE OF ENGINEERING",
+        },
+        {
+          id: "VAC2603043",
+          name: "KOLIMI HEENA KOUSAR",
+          status: "Eligible",
+          institution: "MADANAPALLE INSTITUTE OF TECHNOLOGY & SCIENCE ",
+        },
+        {
+          id: "VAC2603044",
+          name: "Kamuri Srujana",
+          status: "Eligible",
+          institution: "Madanapalle Institute of Technology and Science ",
+        },
+        {
+          id: "VAC2603045",
+          name: "Keerthana",
+          status: "Eligible",
+          institution: "SJIT",
+        },
+        {
+          id: "VAC2603046",
+          name: "Lingala Jyoshna",
+          status: "Eligible",
+          institution: "Madanapalle Institute of Technology & Science ",
+        },
+        {
+          id: "VAC2603047",
+          name: "MD Ramla Fathima",
+          status: "Eligible",
+          institution:
+            "Stanley college of engineering and technology for women ",
+        },
+        {
+          id: "VAC2603048",
+          name: "Mondikalla Sudhakar",
+          status: "Eligible",
+          institution: "Mits",
+        },
+        {
+          id: "VAC2603049",
+          name: "P. GOUTHAMI",
+          status: "Eligible",
+          institution: "PSG Institute of Technology and Applied Research",
+        },
+        {
+          id: "VAC2603050",
+          name: "SHAIK BABA SHAREEF",
+          status: "Eligible",
+          institution: "MADANAPALLE INSTITUTE OF TECHNOLOGY & SCIENCE ",
+        },
+        {
+          id: "VAC2603051",
+          name: "Saranya",
+          status: "Eligible",
+          institution: "PSG College of arts and science ",
+        },
+        {
+          id: "VAC2603052",
+          name: "Sneha A",
+          status: "Eligible",
+          institution: "J. J college of engineering and technology",
+        },
+        {
+          id: "VAC2603053",
+          name: "Srimathy R",
+          status: "Eligible",
+          institution: "Sastra university srinivasa ramanujan center ",
+        },
+        {
+          id: "VAC2603054",
+          name: "Subramanian P",
+          status: "Eligible",
+          institution: "Dhanalakshmi Srinivasan University ",
+        },
+        {
+          id: "VAC2603055",
+          name: "UPPARA PAVANI",
+          status: "Eligible",
+          institution: "Madanapalle Institute of Technology and Science",
+        },
+        {
+          id: "VAC2603056",
+          name: "VIJEY NATHAN V",
+          status: "Eligible",
+          institution: "Vellore Institute of Technology, Vellore ",
+        },
+        {
+          id: "VAC2603057",
+          name: "Ayesha Sarwat",
+          status: "Eligible",
+          institution:
+            "Stanley college of engineering and technology for women ",
+        },
+        {
+          id: "VAC2603058",
+          name: "Dr. T. V. V. Satyanarayana",
+          status: "Eligible",
+          institution: "Mohan Babu University",
+        },
+        {
+          id: "VAC2603059",
+          name: "M.DAYANA",
+          status: "Eligible",
+          institution:
+            "Dhanalakshmi Srinivasan engineering college (autonomous)",
+        },
+        {
+          id: "VAC2603060",
+          name: "Mahalakshmi D",
+          status: "Eligible",
+          institution: "AVC College of Engineering ",
+        },
+        {
+          id: "VAC2603061",
+          name: "N. Punitha",
+          status: "Eligible",
+          institution: "DHANALAKSHMI SRINIVASAN ENGINEERING COLLEGE",
+        },
+        {
+          id: "VAC2603062",
+          name: "P JEYAMEDONA",
+          status: "Eligible",
+          institution: "SRMTRPEC ",
+        },
+        {
+          id: "VAC2603063",
+          name: "Preethi Ananthachari",
+          status: "Eligible",
+          institution: "Ahlia University, Bahrain",
+        },
+        {
+          id: "VAC2603064",
+          name: "R SAMPAVI",
+          status: "Eligible",
+          institution: "SRM TRP ENGINEERING COLLEGE ",
+        },
+        {
+          id: "VAC2603065",
+          name: "S DEVA PRIYA",
+          status: "Eligible",
+          institution: "SRM TRP ENGINEERING COLLEGE ",
+        },
+        {
+          id: "VAC2603066",
+          name: "S.SIVASAKTHI",
+          status: "Eligible",
+          institution: "Dhanalakshmi Srinivasan University ",
+        },
+        {
+          id: "VAC2603067",
+          name: "Sivakumar P",
+          status: "Eligible",
+          institution: "Dhanalakshmi Srinivasan engineering college ",
+        },
+        {
+          id: "VAC2603068",
+          name: "Soham Sanjyot Shete",
+          status: "Eligible",
+          institution: "Vellore Institute of Technology",
+        },
+        {
+          id: "VAC2603069",
+          name: "Sujitha M",
+          status: "Eligible",
+          institution:
+            "Dhanalakshmi Srinivasan Engineering College Perambalur ",
+        },
+        {
+          id: "VAC2603070",
+          name: "A Albert Alexe",
+          status: "Eligible",
+          institution: "K.Ramakrishnan College of Engineering ",
+        },
+        {
+          id: "VAC2603071",
+          name: "Are Ashamani",
+          status: "Eligible",
+          institution: "Madanapalle Institute of Technology and Science ",
+        },
+        {
+          id: "VAC2603072",
+          name: "GUDIMETLA AYESHA",
+          status: "Eligible",
+          institution: "Madanapalle institute of technology and science ",
+        },
+        {
+          id: "VAC2603073",
+          name: "Haresh Venugopal",
+          status: "Eligible",
+          institution: "Vellore institute of technolgoy",
+        },
+        {
+          id: "VAC2603074",
+          name: "Juveriya Talath",
+          status: "Eligible",
+          institution:
+            "Stanley College of Engineering and Technology for Women ",
+        },
+        {
+          id: "VAC2603075",
+          name: "Keerthana A G V",
+          status: "Eligible",
+          institution: "AVS ENGINNERING COLLEGE ",
+        },
+        {
+          id: "VAC2603076",
+          name: "MADAM JASHWANTH",
+          status: "Eligible",
+          institution: "Madanapalle institute of technology and science ",
+        },
+        {
+          id: "VAC2603077",
+          name: "Thejuswini Abirami",
+          status: "Eligible",
+          institution: "SRM TRP Engineering College ",
+        },
+        {
+          id: "VAC2603078",
+          name: "Vishnu Varthan S S",
+          status: "Eligible",
+          institution: "SRM TRP Engineering College ",
+        },
+        {
+          id: "VAC2603079",
+          name: "ANITHA V",
+          status: "Eligible",
+          institution: "Knowledge Institute of Technology",
+        },
+        {
+          id: "VAC2603080",
+          name: "Dhilipkumar Sivakumar",
+          status: "Eligible",
+          institution: "VIT",
+        },
+        {
+          id: "VAC2603081",
+          name: "Dr. C. Swapna",
+          status: "Eligible",
+          institution:
+            "Stanley College of Engineering and Technology for Women ",
+        },
+        {
+          id: "VAC2603082",
+          name: "HarshaVardhan Thummala",
+          status: "Eligible",
+          institution: "Madanapalle institute of technology and sciences ",
+        },
+        {
+          id: "VAC2603083",
+          name: "ISHANTH RAJ I",
+          status: "Eligible",
+          institution: "SASTRA",
+        },
+        {
+          id: "VAC2603084",
+          name: "JAIGANESH M",
+          status: "Eligible",
+          institution: "SRM TRP ENGINEERING COLLEGE ",
+        },
+        {
+          id: "VAC2603085",
+          name: "Lenat Sughirdha C",
+          status: "Eligible",
+          institution: "SRM TRP ENGINEERING COLLEGE ",
+        },
+        {
+          id: "VAC2603086",
+          name: "Logeswaran E",
+          status: "Eligible",
+          institution: "Panimalar engineering college ",
+        },
+        {
+          id: "VAC2603087",
+          name: "Logeswaran M",
+          status: "Eligible",
+          institution: "Srm trp engineering college ",
+        },
+        {
+          id: "VAC2603088",
+          name: "Naveen S",
+          status: "Eligible",
+          institution: "SRM TRP ENGINEERING COLLEGE ",
+        },
+        {
+          id: "VAC2603089",
+          name: "Pugazhendhi S",
+          status: "Eligible",
+          institution: "Vellore Institute of Technology",
+        },
+        {
+          id: "VAC2603090",
+          name: "R YUGENDRAN",
+          status: "Eligible",
+          institution: "SASTRA DEEMED UNIVERSITY ",
+        },
+        {
+          id: "VAC2603091",
+          name: "Rayapati Tejeswara Naidu",
+          status: "Eligible",
+          institution: "Madanapalle Institute of Technology & Science ",
+        },
+        {
+          id: "VAC2603092",
+          name: "SUBASRI M",
+          status: "Eligible",
+          institution: "SRM TRP ENGINEERING COLLEGE ",
+        },
+        {
+          id: "VAC2603093",
+          name: "Sabeetha Saraswathi S",
+          status: "Eligible",
+          institution: "SRM TRP ENGINEERING COLLEGE ",
+        },
+        {
+          id: "VAC2603094",
+          name: "Sakthisri M",
+          status: "Eligible",
+          institution: "SRM TRP Engineering college ",
+        },
+        {
+          id: "VAC2603095",
+          name: "Sumith singh",
+          status: "Eligible",
+          institution: "Madanapalli institute of technology and science ",
+        },
+        {
+          id: "VAC2603096",
+          name: "VRINAALINI M S",
+          status: "Eligible",
+          institution: "SRM TRP ENGINEERING COLLEGE ",
+        },
+        {
+          id: "VAC2603097",
+          name: "YALLA SREEVARDHAN",
+          status: "Eligible",
+          institution: "MADANAPALLE INSTITUTE OF TECHNOLOGY AND SCIENCE",
+        },
+        {
+          id: "VAC2603098",
+          name: "DHANUSHKANNA R",
+          status: "Eligible",
+          institution: "SASTRA",
+        },
+        {
+          id: "VAC2603099",
+          name: "Dhivya Thirusty.K",
+          status: "Eligible",
+          institution:
+            "Dhanalakshmi srinivasan engineering college Autonomous at Perambalur ",
+        },
+        {
+          id: "VAC2603100",
+          name: "Dr.P.Vijayalakshmi",
+          status: "Eligible",
+          institution: "Knowledge Institute of Technology ",
+        },
+        {
+          id: "VAC2603101",
+          name: "Lakshmi Valmiki",
+          status: "Eligible",
+          institution: "Madanapalle Institute of technology and science ",
+        },
+        {
+          id: "VAC2603102",
+          name: "N.Ashraf Vali",
+          status: "Eligible",
+          institution: "Madanapalle Institute of Technology & Science ",
+        },
+        {
+          id: "VAC2603103",
+          name: "Ramya D",
+          status: "Eligible",
+          institution: "Knowledge Institute of Technology",
+        },
+        {
+          id: "VAC2603104",
+          name: "Rupavathi Bandari",
+          status: "Eligible",
+          institution: "Madanapalli institute of technology and science ",
+        },
+        {
+          id: "VAC2603105",
+          name: "Smilarubavathy G",
+          status: "Eligible",
+          institution: "St.Joseph's Institute of Technology ",
+        },
+        {
+          id: "VAC2603106",
+          name: "Sumedhaa Sukumar",
+          status: "Eligible",
+          institution: "SRM TRP ENGINEERING COLLEGE",
+        },
+        {
+          id: "VAC2603107",
+          name: "V.Rithika",
+          status: "Eligible",
+          institution: "Madha engineering college ",
+        },
+        {
+          id: "VAC2603108",
+          name: "T.Suganya",
+          status: "Eligible",
+          institution: "SRM TRP ENGINEERING COLLEGE",
+        },
+        {
+          id: "VAC2603109",
+          name: "D. Vaishnavi ",
+          status: "Eligible",
+          institution: "SRC SASTRA DEEMED TO BE UNIVERSITY, Kumbakonam. ",
+        },
+        {
+          id: "VAC2603110",
+          name: "Kiruthika. N",
+          status: "Eligible",
+          institution: "KARPAGAM ACADEMY OF HIGHER EDUCATION ",
+        },
+        {
+          id: "VAC2603111",
+          name: "Dr.M.Goudilyan",
+          status: "Eligible",
+          institution: "Karpagam College of Engineering",
+        },
+        {
+          id: "VAC2603112",
+          name: "U.Shyamala Devi",
+          status: "Eligible",
+          institution: "Karpagam institute of technology, coimbatore ",
+        },
+        {
+          id: "VAC2603113",
+          name: "srinidhi M",
+          status: "Eligible",
+          institution: "SASTRA",
+        },
+        {
+          id: "VAC2603114",
+          name: "Hrithik B",
+          status: "Eligible",
+          institution: "SASTRA",
+        },
+      ];
+      const participantListDownloadUrl = "assets/participants-final-list.pdf";
+      /* =========================== END UPDATE AREA =========================== */
+
+      function initials(name) {
+        return (
+          name
+            .replace(/\b(Mr|Ms|Dr|Prof)\.?\s*/gi, "")
+            .split(/\s+/)
+            .filter(Boolean)
+            .slice(0, 2)
+            .map((x) => x[0])
+            .join("")
+            .toUpperCase() || "RP"
+        );
+      }
+      function renderSchedule() {
+        document.getElementById("scheduleContent").innerHTML = programmeDays
+          .map(
+            (d, index) =>
+              `<div class="tab-pane fade ${index === 0 ? "show active" : ""}" id="${d.id}"><div class="schedule-table table-responsive"><table class="table table-striped mb-0"><thead><tr><th style="width:18%">Time</th><th style="width:24%">Resource Person</th><th>Session / Activity</th></tr></thead><tbody>${d.sessions.map((s) => `<tr class="${s[3]}"><td class="time">${s[0]}</td><td class="speaker-name">${s[1] || "—"}</td><td>${s[2]}</td></tr>`).join("")}</tbody></table></div></div>`,
+          )
+          .join("");
+      }
+      function renderSpeakers() {
+        document.getElementById("speakerGrid").innerHTML = speakers
+          .map(
+            (s) =>
+              `<div class="col-sm-6 col-lg-4"><article class="speaker-card"><div class="speaker-avatar">${initials(s.name)}</div><h3>${s.name}</h3><div class="topic">${s.topic}</div><div class="bio-placeholder">Add designation, institution, photograph, short biography and profile URL here.</div>${s.profile !== "#" ? `<a class="btn btn-sm btn-outline-primary mt-3" href="${s.profile}" target="_blank">View Profile</a>` : ""}</article></div>`,
+          )
+          .join("");
+      }
+      function renderCards(items, target, type) {
+        document.getElementById(target).innerHTML = items
+          .map(
+            (x) =>
+              `<div class="col-md-6 col-lg-${type === "video" ? "4" : "4"}"><article class="resource-card"><div class="d-flex justify-content-between align-items-start"><div class="resource-icon"><i class="bi ${type === "video" ? "bi-play-btn" : x.icon}"></i></div><span class="status-badge ${x.available ? "available" : ""}"><i class="bi ${x.available ? "bi-check-circle" : "bi-clock"}"></i>${x.available ? "Available" : "To be uploaded"}</span></div><h3>${x.title}</h3><p>${x.description}</p>${x.available ? `<a class="resource-link" href="${x.url}" target="_blank" rel="noopener">Open resource <i class="bi bi-arrow-up-right"></i></a>` : `<span class="text-secondary small">Link will be activated after upload.</span>`}</article></div>`,
+          )
+          .join("");
+      }
+      function renderParticipants(filter = "") {
+        const term = filter.toLowerCase();
+        const rows = participants.filter((p) =>
+          Object.values(p).join(" ").toLowerCase().includes(term),
+        );
+        const wrap = document.getElementById("participantTableWrap"),
+          empty = document.getElementById("participantEmpty");
+        if (participants.length) {
+          wrap.classList.remove("d-none");
+          empty.classList.add("d-none");
+          document.getElementById("participantBody").innerHTML = rows
+            .map(
+              (p, i) =>
+                `<tr><td>${i + 1}</td><td>${p.name}</td><td>${p.id}</td><td>${p.institution}</td><td><span class="badge text-bg-success">${p.status}</span></td></tr>`,
+            )
+            .join("");
+        }
+        if (participantListDownloadUrl !== "#") {
+          const a = document.getElementById("participantDownload");
+          a.href = participantListDownloadUrl;
+          a.classList.remove("disabled");
+          a.removeAttribute("aria-disabled");
+        }
+      }
+      renderSchedule();
+      renderSpeakers();
+      renderCards(courseResources, "resourceGrid", "resource");
+      renderCards(videos, "videoGrid", "video");
+      renderParticipants();
+      document
+        .getElementById("participantSearch")
+        .addEventListener("input", (e) => renderParticipants(e.target.value));
+      const toggle = document.querySelector(".mobile-nav-toggle");
+      if (toggle) {
+        toggle.addEventListener("click", () => {
+          document.body.classList.toggle("mobile-nav-active");
+          toggle.classList.toggle("bi-list");
+          toggle.classList.toggle("bi-x");
+        });
+      }
+
+      // Correct same-page navigation for the two sticky bars (main header + course quick navigation).
+      function stickyOffset() {
+        const header = document.getElementById("header");
+        const quickNav = document.querySelector(".quick-nav");
+        return (
+          (header ? header.offsetHeight : 0) +
+          (quickNav ? quickNav.offsetHeight : 0) +
+          14
+        );
+      }
+      function goToSection(hash, updateHistory = true) {
+        if (!hash || hash === "#") return;
+        const target = document.querySelector(hash);
+        if (!target) return;
+        const top =
+          target.getBoundingClientRect().top +
+          window.pageYOffset -
+          stickyOffset();
+        window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+        if (updateHistory) history.pushState(null, "", hash);
+      }
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        if (link.id === "scroll-top" || link.classList.contains("disabled"))
+          return;
+        link.addEventListener("click", (event) => {
+          const hash = link.getAttribute("href");
+          if (!hash || hash === "#" || !document.querySelector(hash)) return;
+          event.preventDefault();
+          goToSection(hash);
+          if (document.body.classList.contains("mobile-nav-active") && toggle) {
+            document.body.classList.remove("mobile-nav-active");
+            toggle.classList.add("bi-list");
+            toggle.classList.remove("bi-x");
+          }
+        });
+      });
+      window.addEventListener("load", () => {
+        if (location.hash)
+          setTimeout(() => goToSection(location.hash, false), 100);
+      });
+      window.addEventListener("popstate", () => {
+        if (location.hash) goToSection(location.hash, false);
+      });
+
+      const scrollTop = document.getElementById("scroll-top");
+      function toggleScroll() {
+        scrollTop.classList.toggle("active", window.scrollY > 100);
+      }
+      scrollTop.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        history.pushState(null, "", location.pathname + location.search);
+      });
+      window.addEventListener("scroll", toggleScroll);
+      toggleScroll();
+    </script>
+  </body>
+</html>
